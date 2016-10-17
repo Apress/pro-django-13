@@ -1,0 +1,13 @@
+{% extends theme %}
+
+{% block title %}Acme Real Estate{% endblock %}
+
+{% block links %}
+<li><a href="{% url home_page %}">Home</a></li>
+<li><a href="{% url property_list %}">Properties</a></li>
+<li><a href="{% url about_page %}">About</a></li>
+{% endblock %}
+
+{% block content %}
+<p>Welcome to Acme Real Estate!</p>
+{% endblock %}

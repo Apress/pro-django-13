@@ -1,0 +1,11 @@
+[
+  {
+    "model": "themes.theme",  
+    "pk": 1,
+    "fields": {
+      "author": 1,
+      "title": "Example Theme",
+      "template_string": "{% extends 'base.html' %}{% block theme %}<h1>{% block title %}{% endblock %}</h1><ul id='links'>{% block links %}{% endblock %}</ul><div id='content'>{% block content %}{% endblock %}</div>{% endblock %}"
+    }
+  }
+]

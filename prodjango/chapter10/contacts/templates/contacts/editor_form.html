@@ -1,0 +1,9 @@
+<!doctype html>
+({{ user }})
+<form method="post" action="{% if username %}{% url 'contact_edit_form' username %}{% else %}{% url 'contact_add_form' %}{% endif %}">
+{% csrf_token %}
+{{ user_form.as_p }}
+{{ contact_form.as_p }}
+{{ combined_form.as_p }}
+<button type="submit">Submit</button>
+</form>

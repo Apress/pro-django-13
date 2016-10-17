@@ -1,0 +1,7 @@
+<!doctype html>
+<ul>
+{% for contact in contact_list %}
+    <li><a href="{% url 'contact_detail' contact.user.username %}">{{ contact.user.get_full_name }}</a></li>
+{% endfor %}
+</ul>
+<a href="{% url 'contact_add_form' %}">Add</a>
